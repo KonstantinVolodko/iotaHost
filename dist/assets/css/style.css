@@ -506,6 +506,7 @@ html {
 
 body {
     font-family: "Manrope";
+    background: #F7F7F7;
 }
 
 img {
@@ -1420,10 +1421,16 @@ main {
 
 @media (max-width: 850px) {
     .main-createEmotions .main-createEmotions__content {
-        margin-top: 3rem;
+        margin-top: 8rem;
         -ms-flex-align: end;
         align-items: flex-end;
         gap: 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-createEmotions .main-createEmotions__content {
+        margin-top: 6rem;
     }
 }
 
@@ -1450,7 +1457,15 @@ main {
 
 @media (max-width: 850px) {
     .main-createEmotions .main-createEmotions__content .main-createEmotions__imgContainer .services-createEmotions__helloText {
-        display: none;
+        left: 16%;
+        top: -7%;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-createEmotions .main-createEmotions__content .main-createEmotions__imgContainer .services-createEmotions__helloText {
+        left: 26%;
+        top: -8%;
     }
 }
 
@@ -1525,7 +1540,7 @@ main {
 
 @media (max-width: 500px) {
     .main-createEmotions .main-createEmotions__content .main-createEmotions__textContainer h1 {
-        font-size: 4.3rem;
+        font-size: 5.3rem;
         line-height: 100.1%;
         text-align: right;
         width: 99%;
@@ -1551,7 +1566,7 @@ main {
 
 @media (max-width: 500px) {
     .main-createEmotions .main-createEmotions__content .main-createEmotions__textContainer .main-createEmotions__subtitle {
-        font-size: 1.9rem;
+        font-size: 2.1rem;
         line-height: 2.2rem;
         width: 55%;
     }
@@ -1595,7 +1610,7 @@ main {
 
 .leftBlockContainer .leftBlockContainer__imgContainer {
     padding-top: 4rem;
-    border-top: 0.3rem solid #000000;
+    border-top: 3px solid #000000;
     width: 100%;
     padding-left: 8rem;
     padding-bottom: 4rem;
@@ -1629,7 +1644,7 @@ main {
 
 .leftBlockContainer .leftBlockContainer__textContainer {
     height: 40.4rem;
-    border-right: 0.3rem solid #000000;
+    border-right: 3px solid #000000;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -1707,7 +1722,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin-right: 11.5rem;
+    margin-right: 13rem;
     row-gap: 16.2rem;
     padding-left: 3.6rem;
 }
@@ -1765,7 +1780,7 @@ main {
 
 @media (max-width: 500px) {
     .main-solutions .main-solutions__content h2 {
-        font-size: 3.5rem;
+        font-size: 4.2rem;
         line-height: 100.1%;
         width: 88%;
     }
@@ -1803,7 +1818,7 @@ main {
 
 @media (max-width: 500px) {
     .main-solutions .main-solutions__content .main-solutions__subtitle {
-        font-size: 1.9rem;
+        font-size: 2.1rem;
         line-height: 137.1%;
     }
 }
@@ -1863,7 +1878,7 @@ main {
     -ms-flex-align: center;
     align-items: center;
     gap: 3.2rem;
-    border-bottom: 0.3rem solid #000000;
+    border-bottom: 3px solid #000000;
     -ms-flex-pack: end;
     justify-content: flex-end;
     padding-right: 2rem;
@@ -1876,7 +1891,7 @@ main {
         gap: 1rem;
         -ms-flex-align: start;
         align-items: flex-start;
-        padding-left: 4rem;
+        padding-left: 5rem;
     }
 }
 
@@ -1898,7 +1913,7 @@ main {
 
 @media (max-width: 500px) {
     .main-solutions .main-solutions__content .main-solutions__imgContainer span {
-        font-size: 1.4rem;
+        font-size: 2.1rem;
         line-height: 137.1%;
     }
 }
@@ -1927,7 +1942,7 @@ main {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    padding-left: 3.7rem;
+    padding-left: 3.4rem;
 }
 
 @media (max-width: 1600px) {
@@ -1943,7 +1958,7 @@ main {
 }
 
 .main-services .main-services__content {
-    width: 58.7%;
+    width: 59.6%;
 }
 
 @media (max-width: 920px) {
@@ -1969,9 +1984,10 @@ main {
     line-height: 120.6%;
     color: #000000;
     background: none;
-    width: 72%;
+    width: 70%;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    padding-left: unset;
 }
 
 @media (max-width: 1330px) {
@@ -1982,7 +1998,7 @@ main {
 
 @media (max-width: 500px) {
     .main-services .main-services__content .main-services__tabContainer .main-services__btn {
-        font-size: 2.3rem;
+        font-size: 2.7rem;
         line-height: 120.6%;
     }
 }
@@ -2027,6 +2043,12 @@ main {
     font-size: 1.6rem;
     line-height: 137.1%;
     color: #000000;
+}
+
+@media (max-width: 500px) {
+    .main-services .main-services__content .main-services__tabContainer .main-services__tabContent a {
+        font-size: 2.1rem;
+    }
 }
 
 .main-services .main-services__content .main-services__tabContainer .main-services__tabContent a svg {
@@ -2113,7 +2135,7 @@ main {
 
 @media (max-width: 500px) {
     .swiper-container .swiper-slide-container {
-        font-size: 3.9rem;
+        font-size: 4.3rem;
         line-height: 120.6%;
     }
 }
@@ -2145,7 +2167,7 @@ main {
 
 @media (max-width: 500px) {
     .swiper-slide-containerSec .main-result__swiperTitle {
-        font-size: 2.7rem;
+        font-size: 3.3rem;
         line-height: 120.6%;
     }
 }
@@ -2161,7 +2183,7 @@ main {
 
 @media (max-width: 500px) {
     .swiper-slide-containerSec .main-result__swiperText {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         line-height: 120.6%;
     }
 }
@@ -2198,7 +2220,7 @@ main {
 }
 
 .gallery-thumbs .swiper-slide-active {
-    border-bottom: 0.4rem solid #000000;
+    border-bottom: 4px solid #000000;
     color: #fff;
     -webkit-text-stroke: 0.1rem black;
 }
@@ -2314,7 +2336,7 @@ main {
 
 @media (max-width: 500px) {
     .main-result .main-result__content h2 {
-        font-size: 3.5rem;
+        font-size: 4.3rem;
         line-height: 100.1%;
         width: 53%;
     }
@@ -2368,7 +2390,7 @@ main {
 @media (max-width: 500px) {
     .main-result .main-result__content .main-result__stepsSwiper .main-result__subtitle {
         font-weight: 500;
-        font-size: 2.4rem;
+        font-size: 3.2rem;
         line-height: 120.6%;
     }
 }
@@ -2435,7 +2457,7 @@ main {
 
 @media (max-width: 500px) {
     .main-firstStep .main-firstStep__content .main-firstStep__title h2 {
-        font-size: 4.3rem;
+        font-size: 5.3rem;
         line-height: 100.1%;
         width: 88%;
     }
@@ -2443,7 +2465,7 @@ main {
 
 .main-firstStep .main-firstStep__content .main-firstStep__title .main-firstStep__blackLine {
     position: absolute;
-    border-bottom: 0.3rem solid #000000;
+    border-bottom: 3px solid #000000;
     width: 55rem;
     top: 50%;
     right: -7%;
@@ -2481,7 +2503,7 @@ main {
 
 @media (max-width: 500px) {
     .main-firstStep .main-firstStep__content .main-firstStep__title .main-firstStep__blackLine {
-        right: -68%;
+        right: -73%;
     }
 }
 
@@ -2549,6 +2571,12 @@ main {
     }
 }
 
+@media (max-width: 500px) {
+    .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock .main-firstStep__text {
+        font-size: 2.1rem;
+    }
+}
+
 .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock .main-firstStep__text span {
     font-weight: 700;
 }
@@ -2590,7 +2618,7 @@ main {
 
 @media (max-width: 500px) {
     .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock .main-firstStep__accordeonContainer .main-firstStep__accrordeonBtn {
-        font-size: 2.1rem;
+        font-size: 2.4rem;
         line-height: 133.1%;
         -ms-flex-align: center;
         align-items: center;
@@ -2598,7 +2626,7 @@ main {
 }
 
 .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock .main-firstStep__accordeonContainer .main-firstStep__accrordeonBtn span {
-    width: 90%;
+    width: 89%;
 }
 
 @media (max-width: 500px) {
@@ -2639,7 +2667,7 @@ main {
 
 @media (max-width: 500px) {
     .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock .main-firstStep__accordeonContainer .main-firstStep__accordeonContent {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         padding-top: 2rem;
     }
 }
@@ -2681,15 +2709,17 @@ main {
 
 @media (max-width: 500px) {
     .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock .main-firstStep__subtitle {
-        font-size: 4.3rem;
+        font-size: 5.3rem;
         line-height: 100.1%;
         width: 73%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
 }
 
 .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock .main-firstStep__accordeonContainer {
-    border-top: 0.2rem solid #000000;
-    border-bottom: 0.2rem solid #000000;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -2789,7 +2819,7 @@ main {
 .main-gallery .main-gallery__tabBlockContainer .main-gallery__tabsContainer {
     display: -ms-flexbox;
     display: flex;
-    border-bottom: 0.3rem solid #000000;
+    border-bottom: 3px solid #000000;
     width: 58.6%;
     gap: 25.8rem;
     padding-bottom: 2rem;
@@ -2797,7 +2827,7 @@ main {
 
 @media (max-width: 1600px) {
     .main-gallery .main-gallery__tabBlockContainer .main-gallery__tabsContainer {
-        gap: 21.8rem;
+        gap: 19.8rem;
     }
 }
 
@@ -2847,7 +2877,7 @@ main {
 
 @media (max-width: 500px) {
     .main-gallery .main-gallery__tabBlockContainer .main-gallery__tabsContainer .main-gallery__tab .main-gallery__tabHeader {
-        font-size: 1.9rem;
+        font-size: 2.1rem;
         line-height: 100.1%;
     }
 }
@@ -2860,7 +2890,7 @@ main {
 }
 
 .main-gallery .main-gallery__helper {
-    margin-top: 7.6rem;
+    margin-top: 4.6rem;
 }
 
 @media (max-width: 850px) {
@@ -2893,7 +2923,7 @@ main {
 
 @media (max-width: 500px) {
     .main-gallery .main-gallery__helper .main-gallery__slideTitle {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         line-height: 100.1%;
     }
 }
@@ -2990,7 +3020,7 @@ main {
 
 @media (max-width: 500px) {
     .main-contact .main-contact__content form h2 {
-        font-size: 4rem;
+        font-size: 4.3rem;
         line-height: 4.4rem;
     }
 }
@@ -2999,7 +3029,7 @@ main {
     border: none;
     padding-bottom: 1rem;
     padding-left: 1rem;
-    border-bottom: 0.2rem solid #000000;
+    border-bottom: 2px solid #000000;
     outline: none;
     margin-bottom: 2.7rem;
     font-style: normal;
@@ -3007,11 +3037,12 @@ main {
     font-size: 1.8rem;
     line-height: 2.5rem;
     color: #000000;
+    background: #F7F7F7;
 }
 
 @media (max-width: 500px) {
     .main-contact .main-contact__content form input {
-        font-size: 1.7rem;
+        font-size: 2.1rem;
         line-height: 1.9rem;
     }
 }
@@ -3036,6 +3067,58 @@ main {
     color: #000000;
 }
 
+.main-contact .main-contact__content form textarea {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 25px;
+    color: #000000;
+    border: none;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border-bottom: 2px solid #000000;
+    outline: none;
+    margin-bottom: 2.7rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #000000;
+    resize: none;
+    overflow: hidden;
+    height: 4rem;
+    transition: all 0.2s linear;
+    background: #F7F7F7;
+}
+
+@media (max-width: 500px) {
+    .main-contact .main-contact__content form textarea {
+        font-size: 2.1rem;
+        line-height: 1.9rem;
+    }
+}
+
+.main-contact .main-contact__content form textarea::-webkit-input-placeholder {
+    color: #000000;
+}
+
+.main-contact .main-contact__content form textarea::-moz-placeholder {
+    color: #000000;
+}
+
+.main-contact .main-contact__content form textarea:-ms-input-placeholder {
+    color: #000000;
+}
+
+.main-contact .main-contact__content form textarea::-ms-input-placeholder {
+    color: #000000;
+}
+
+.main-contact .main-contact__content form textarea::placeholder {
+    color: #000000;
+}
+
 .main-contact .main-contact__content form .main-contact__licence {
     font-style: normal;
     font-weight: 400;
@@ -3043,6 +3126,12 @@ main {
     line-height: 1.9rem;
     color: #000000;
     margin-bottom: 3rem;
+}
+
+@media (max-width: 500px) {
+    .main-contact .main-contact__content form .main-contact__licence {
+        font-size: 1.7rem;
+    }
 }
 
 .main-contact .main-contact__content form .main-contact__licence a {
@@ -3055,7 +3144,7 @@ main {
     height: 15rem;
     border-radius: 50%;
     background: none;
-    border: 0.1rem solid #000000;
+    border: 1px solid #000000;
     margin: 0 auto;
 }
 
@@ -3091,7 +3180,7 @@ main {
     font-size: 1.6rem;
     line-height: 100.1%;
     color: #000000;
-    border-bottom: 0.2rem solid #000000;
+    border-bottom: 2px solid #000000;
     margin-top: 10rem;
     display: none;
 }
@@ -3112,6 +3201,10 @@ main {
 .main-separator__mobile div {
     padding-left: 1.5rem;
     margin-bottom: 1rem;
+}
+
+.areaHeight {
+    height: 20rem !important;
 }
 
 .header {
@@ -3171,7 +3264,7 @@ main {
 }
 
 .header-content__burger div {
-    border-top: 0.4rem solid #000000;
+    border-top: 4px solid #000000;
 }
 
 .header-content__burger div:first-child {
@@ -3300,7 +3393,7 @@ main {
 }
 
 .header-menu__content .header-menu__tabsHelper .header-menu__block {
-    border-top: 0.3rem solid #000000;
+    border-top: 3px solid #000000;
     padding-top: 2rem;
     display: -ms-flexbox;
     display: flex;
@@ -3353,7 +3446,7 @@ main {
 .footer-content {
     display: -ms-flexbox;
     display: flex;
-    border-top: 0.3rem solid #000000;
+    border-top: 3px solid #000000;
     padding: 6.3rem 6.5rem 4.2rem 8rem;
     -ms-flex-align: center;
     align-items: center;
@@ -3400,7 +3493,7 @@ main {
 
 @media (max-width: 500px) {
     .footer-content .footer-content__adress {
-        font-size: 1.8rem;
+        font-size: 2.1rem;
         line-height: 100.1%;
     }
 }
@@ -3471,7 +3564,7 @@ main {
 
 @media (max-width: 500px) {
     .footer-content .footer-content__contactsContainer .footer-content__phones a {
-        font-size: 1.8rem;
+        font-size: 2.1rem;
     }
 }
 
@@ -3498,6 +3591,12 @@ main {
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
     color: #000000;
+}
+
+@media (max-width: 500px) {
+    .footer-content .footer-content__contactsContainer .footer-content__yar {
+        font-size: 1.7rem;
+    }
 }
 
 .footer-content .footer-content__mail {
@@ -3563,7 +3662,7 @@ main {
 @media (max-width: 500px) {
     .portfolio-content h2 {
         padding-left: 1.5rem;
-        font-size: 3.5rem;
+        font-size: 4.3rem;
         line-height: 100.1%;
     }
 }
@@ -3672,7 +3771,7 @@ main {
 
 @media (max-width: 500px) {
     .portfolio-content .portfolio-content__contentBlock .portfolio-content__textContainer .portfolio-content__title {
-        font-size: 2.3rem;
+        font-size: 2.6rem;
         line-height: 100.1%;
     }
 }
@@ -3701,7 +3800,7 @@ main {
 
 @media (max-width: 500px) {
     .portfolio-content .portfolio-content__contentBlock .portfolio-content__textContainer .portfolio-content__subtitle {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         line-height: 137.1%;
         margin-bottom: unset;
     }
@@ -3913,7 +4012,7 @@ main {
 
 @media (max-width: 500px) {
     .secondPage-title h2 {
-        font-size: 2.7rem;
+        font-size: 3.2rem;
         width: 35%;
     }
 }
@@ -3987,7 +4086,7 @@ main {
 @media (max-width: 500px) {
     .secondPage-idea .secondPage-idea__aboutClientsBlock h2 {
         width: 100%;
-        font-size: 1.9rem;
+        font-size: 2.1rem;
     }
 }
 
@@ -4078,7 +4177,7 @@ main {
 
 @media (max-width: 500px) {
     .secondPage-idea .secondPage-idea__numberBlock .secondPage-idea__textBlock .secondPage-idea__subtitle {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -4248,7 +4347,7 @@ main {
 
 @media (max-width: 500px) {
     .secondPage-idea__underlineBlock .secondPage-idea__underTitle {
-        font-size: 1.9rem;
+        font-size: 2.1rem;
     }
 }
 
@@ -4280,7 +4379,7 @@ main {
 
 @media (max-width: 500px) {
     .secondPage-idea__underlineBlock .secondPage-idea__underSubtitle {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -4355,13 +4454,13 @@ main {
     font-weight: 800;
     font-size: 12.8rem;
     line-height: 100.1%;
-    color: white;
+    color: #f7f7f7;
     -webkit-text-stroke: 0.2rem black;
 }
 
 @media (max-width: 500px) {
     .secondPage-idea__title .secondPage-idea__number {
-        font-size: 6.7rem;
+        font-size: 7.9rem;
     }
 }
 
@@ -4380,7 +4479,7 @@ main {
 
 @media (max-width: 500px) {
     .secondPage-idea__title .secondPage-idea__ideaText {
-        font-size: 4.6rem;
+        font-size: 5.3rem;
     }
 }
 
@@ -4740,7 +4839,7 @@ main {
     margin: unset !important;
     border-radius: 0%;
     background: unset;
-    border-bottom: 0.2rem solid #000000;
+    border-bottom: 2px solid #000000;
     opacity: unset;
 }
 
@@ -4819,7 +4918,7 @@ main {
     margin: unset !important;
     border-radius: 0%;
     background: unset;
-    border-bottom: 0.2rem solid #000000;
+    border-bottom: 2px solid #000000;
     opacity: unset;
 }
 
@@ -4946,7 +5045,7 @@ main {
 
 @media (max-width: 500px) {
     .services-header .services-header__contentBlock .services-header__textContainer .services-header__text {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -4956,7 +5055,7 @@ main {
     line-height: 2.5rem;
     letter-spacing: 0.03em;
     color: #000000;
-    border-bottom: 0.2rem solid #000000;
+    border-bottom: 2px solid #000000;
     cursor: pointer;
     margin-bottom: 6.6rem;
 }
@@ -5001,7 +5100,7 @@ main {
 
 @media (max-width: 500px) {
     .services-header .services-header__contentBlock .services-header__textContainer .services-header__sectionBlock .select__toggle {
-        font-size: 1.6rem;
+        font-size: 2.1rem;
     }
 }
 
@@ -5021,7 +5120,7 @@ main {
 @media (max-width: 500px) {
     .services-header h2 {
         width: 100%;
-        font-size: 3.5rem;
+        font-size: 4.3rem;
     }
 }
 
@@ -5112,7 +5211,7 @@ main {
 
 @media (max-width: 500px) {
     .services-particular h2 {
-        font-size: 2.7rem;
+        font-size: 3.2rem;
         width: 79%;
         margin-bottom: 3rem;
     }
@@ -5127,7 +5226,7 @@ main {
 
 @media (max-width: 500px) {
     .services-particular .services-particular__title {
-        font-size: 2.1rem;
+        font-size: 2.4rem;
     }
 }
 
@@ -5136,6 +5235,12 @@ main {
     font-size: 1.6rem;
     line-height: 137.1%;
     color: #000000;
+}
+
+@media (max-width: 500px) {
+    .services-particular .services-particular__subtitle {
+        font-size: 1.9rem;
+    }
 }
 
 .services-particular .services-particular__textPosition {
@@ -5232,6 +5337,7 @@ main {
     .services-particular .services-particular__textPositionContainer {
         width: 100%;
         margin-top: 6rem;
+        font-size: 2.1rem;
     }
 }
 
@@ -5279,7 +5385,7 @@ main {
 @media (max-width: 500px) {
     .services-steps h2 {
         width: 100%;
-        font-size: 2.7rem;
+        font-size: 3.2rem;
         margin-bottom: 3rem;
     }
 }
@@ -5388,11 +5494,12 @@ main {
 @media (max-width: 500px) {
     .services-steps .services-steps__contentContainer .swiper-slide .services-steps__title {
         width: 100%;
+        font-size: 2.6rem;
     }
 }
 
 .services-steps .services-steps__contentContainer .swiper-slide .services-steps__line {
-    border-bottom: 0.3rem solid #000000;
+    border-bottom: 3px solid #000000;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
@@ -5476,6 +5583,7 @@ main {
 @media (max-width: 500px) {
     .services-steps .services-steps__result .services-steps__text {
         margin-bottom: 6rem;
+        font-size: 3.3rem;
     }
 }
 
@@ -5502,7 +5610,7 @@ main {
     line-height: 2.5rem;
     letter-spacing: 0.03em;
     color: #000000;
-    border-bottom: 0.2rem solid #000000;
+    border-bottom: 2px solid #000000;
 }
 
 .services-steps .services-steps__result .services-steps__block .services-steps__textContainer {
@@ -5740,7 +5848,7 @@ main {
 
 @media (max-width: 500px) {
     .organizationOfSpace-whyContainer .organizationOfSpace-whyContainer__textContainer .organizationOfSpace-whyContainer__subtitle {
-        font-size: 2.1rem;
+        font-size: 2.4rem;
     }
 }
 
@@ -5784,6 +5892,12 @@ main {
     line-height: 100.1%;
     color: #000000;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 500px) {
+    .organizationOfSpace-whyContainer .organizationOfSpace-whyContainer__listContainer .organizationOfSpace-whyContainer__number {
+        font-size: 5.3rem;
+    }
 }
 
 .organizationOfSpace-whyContainer .organizationOfSpace-whyContainer__listContainer .organizationOfSpace-whyContainer__subtitle {
@@ -5856,11 +5970,6 @@ main {
 }
 
 .organizationOfSpace-include .organizationOfSpace-include__text {
-    font-weight: 500;
-    font-size: 6.4rem;
-    line-height: 120.6%;
-    text-transform: uppercase;
-    color: #000000;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -5872,8 +5981,22 @@ main {
 
 @media (max-width: 500px) {
     .organizationOfSpace-include .organizationOfSpace-include__text {
-        width: 50%;
-        font-size: 3.5rem;
+        width: 60%;
+    }
+}
+
+.organizationOfSpace-include .organizationOfSpace-include__text h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6.4rem;
+    line-height: 120.6%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+@media (max-width: 500px) {
+    .organizationOfSpace-include .organizationOfSpace-include__text h2 {
+        font-size: 4.3rem;
     }
 }
 
@@ -5883,7 +6006,7 @@ main {
     line-height: 2.5rem;
     letter-spacing: 0.03em;
     color: #000000;
-    border-bottom: 0.2rem solid #000000;
+    border-bottom: 2px solid #000000;
     width: 43%;
 }
 
@@ -5932,7 +6055,7 @@ main {
 
 @media (max-width: 500px) {
     .organizationOfSpace-include .organizationOfSpace-include__swiperBlock .organizationOfSpace-include__swiper .swiper-slide {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -5941,7 +6064,7 @@ main {
     display: flex;
     gap: 2.5rem;
     padding-bottom: 1.8rem;
-    border-bottom: 0.3rem solid #000000;
+    border-bottom: 3px solid #000000;
 }
 
 .organizationOfSpace-include .organizationOfSpace-include__arrowsContainer svg {
@@ -5986,7 +6109,7 @@ main {
     line-height: 2.5rem;
     letter-spacing: 0.03em;
     color: #000000;
-    border-bottom: 0.2rem solid #000000;
+    border-bottom: 2px solid #000000;
     width: 16.4%;
     position: absolute;
     top: -3rem;
@@ -6147,7 +6270,7 @@ main {
 
 @media (max-width: 500px) {
     .design-header h2 {
-        font-size: 3.2rem;
+        font-size: 4.3rem;
         margin-top: 3rem;
     }
 }
@@ -6251,9 +6374,10 @@ main {
 }
 
 @media (max-width: 500px) {
-    .design-include__textPosition {
+    .design-include__textPosition h2 {
         width: 64% !important;
         font-size: 4.2rem !important;
+        font-weight: 500 !important;
     }
 }
 
@@ -6280,7 +6404,7 @@ main {
 
 @media (max-width: 500px) {
     .design-include__swiper .swiper-slide {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -6345,7 +6469,8 @@ main {
 
 @media (max-width: 500px) {
     .design__helper {
-        width: 52% !important;
+        width: 58% !important;
+        font-size: 1.9rem !important;
     }
 }
 
@@ -6586,7 +6711,7 @@ main {
 
 @media (max-width: 500px) {
     .autor-services .autor-services__text {
-        font-size: 2.7rem;
+        font-size: 3.2rem;
     }
 }
 
@@ -6705,7 +6830,7 @@ main {
     .autor-services .autor-services__content .autor-services__numberContainer .autor-services__block .autor-services__number {
         -ms-flex-direction: column;
         flex-direction: column;
-        font-size: 5rem;
+        font-size: 5.3rem;
     }
 }
 
@@ -6804,12 +6929,12 @@ main {
 @media (max-width: 500px) {
     .autor-why .autor-why__content .autor-why__subtitle {
         width: 100%;
-        font-size: 2.1rem;
+        font-size: 2.4rem;
     }
 }
 
 .autor-why .autor-why__content .autor-why__blackLine {
-    border-bottom: 0.3rem solid #000000;
+    border-bottom: 3px solid #000000;
     margin-bottom: 4rem;
 }
 
@@ -6825,7 +6950,7 @@ main {
     line-height: 2.5rem;
     letter-spacing: 0.03em;
     color: #000000;
-    border-bottom: 0.2rem solid #000000;
+    border-bottom: 2px solid #000000;
     width: 24%;
 }
 
@@ -6849,14 +6974,14 @@ main {
 
 @media (max-width: 920px) {
     .autor-why .autor-why__content a {
-        width: 34%;
+        width: 35%;
     }
 }
 
 @media (max-width: 500px) {
     .autor-why .autor-why__content a {
-        width: 52%;
-        font-size: 1.7rem;
+        width: 58%;
+        font-size: 1.9rem;
     }
 }
 
@@ -6868,6 +6993,12 @@ main {
 @media (max-width: 850px) {
     .autor-text_position {
         margin-left: 3.5%;
+    }
+}
+
+@media (max-width: 500px) {
+    .autor-text_position {
+        margin-left: 0rem;
     }
 }
 
@@ -6922,6 +7053,12 @@ main {
     .realization-imgContainer_position {
         width: 100% !important;
         margin-top: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .realization-whyContainer__textContainer {
+        gap: 4rem !important;
     }
 }
 
@@ -6999,7 +7136,7 @@ main {
     display: -ms-flexbox;
     display: flex;
     padding-right: 6rem;
-    border-right: 0.3rem solid #000000;
+    border-right: 3px solid #000000;
     gap: 3rem;
 }
 
@@ -7036,7 +7173,7 @@ main {
 
 @media (max-width: 500px) {
     .realization-swiper .realization-swiper__textContainer .realization-swiper__title {
-        font-size: 5rem;
+        font-size: 5.3rem;
     }
 }
 
@@ -7094,7 +7231,7 @@ main {
 
 @media (max-width: 500px) {
     .realization-swiper__bottomText {
-        font-size: 2.7rem;
+        font-size: 3.2rem;
     }
 }
 
@@ -7112,6 +7249,12 @@ main {
 @media (max-width: 500px) {
     .realization__params {
         margin-top: 3rem !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .realization__subtitleHelp {
+        font-size: 3.2rem !important;
     }
 }
 
@@ -7184,7 +7327,7 @@ main {
     display: -ms-flexbox;
     display: flex;
     padding-bottom: 8rem;
-    border-bottom: 0.3rem solid #000000;
+    border-bottom: 3px solid #000000;
     padding-right: 21.5rem;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -7336,10 +7479,6 @@ main {
 
 .prices-main .prices-main__content .prices-main__container:nth-last-child(-n+2) {
     border-bottom: unset;
-}
-
-.prices-main .prices-main__content .prices-main__textContainer__position {
-    width: 100% !important;
 }
 
 @media (max-width: 1600px) {
@@ -7513,7 +7652,7 @@ main {
 
 @media (max-width: 500px) {
     .blog-content .blog-content__container .blog-content__bigBlock .blog-content__textContainer .blog-content__date {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -7542,7 +7681,7 @@ main {
 
 @media (max-width: 500px) {
     .blog-content .blog-content__container .blog-content__bigBlock .blog-content__textContainer .blog-content__subtitle {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -7648,7 +7787,7 @@ main {
 
 @media (max-width: 500px) {
     .blog-content .blog-content__container .blog-content__smallContainer .blog-content__smallBlock .blog-content__date {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -7675,7 +7814,7 @@ main {
 
 @media (max-width: 500px) {
     .blog-content .blog-content__container .blog-content__smallContainer .blog-content__smallBlock .blog-content__subtitle {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -7983,6 +8122,7 @@ main {
 .contacts-content_position {
     margin-top: 10.3rem;
     padding-right: 27.6rem;
+    padding-left: 3.6rem;
 }
 
 @media (max-width: 1600px) {
@@ -8002,6 +8142,18 @@ main {
 @media (max-width: 500px) {
     .contacts-content_position {
         margin-top: 6rem;
+        padding-left: unset;
+        padding-right: unset;
+    }
+}
+
+.contacts {
+    padding-bottom: 20rem;
+}
+
+@media (max-width: 500px) {
+    .contacts {
+        padding-bottom: 10rem;
     }
 }
 
@@ -8013,6 +8165,8 @@ main {
 @media (max-width: 500px) {
     .contacts__helper {
         margin-top: 4rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
 }
 
@@ -8038,7 +8192,7 @@ main {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 3rem;
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 @media (max-width: 1600px) {
@@ -8050,6 +8204,8 @@ main {
 @media (max-width: 500px) {
     .contacts-content__adressBlock .contacts-content__contactsContainer {
         margin-top: unset;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 }
 
@@ -8066,6 +8222,12 @@ main {
     font-size: 2.4rem;
     line-height: 100.1%;
     color: #000000;
+}
+
+@media (max-width: 500px) {
+    .contacts-content__adressBlock .contacts-content__contactsContainer .contacts-content__helpBlock h2 {
+        font-size: 3.2rem;
+    }
 }
 
 .contacts-content__adressBlock .contacts-content__contactsContainer .contacts-content__helpBlock a {
@@ -8087,12 +8249,24 @@ main {
     gap: 1rem;
 }
 
+@media (max-width: 500px) {
+    .contacts-content__adressBlock .contacts-content__contactsContainer .contacts-content__helpBlock div {
+        font-size: 2.7rem;
+    }
+}
+
 .contacts-content__adressBlock .contacts-content__contactsContainer .contacts-content__helpBlock div a {
     text-decoration: underline;
 }
 
+@media (max-width: 500px) {
+    .contacts-content__adressBlock .contacts-content__contactsContainer .contacts-content__helpBlock div a {
+        font-size: 2.7rem;
+    }
+}
+
 .contacts-content__map_position {
-    margin-top: 10rem;
+    margin-top: 14rem;
 }
 
 .contacts-content__map {
