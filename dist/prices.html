@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="">
+    <title></title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- CSS only -->
+    
+    
+</head>
+
+<body>
+    <svg style="display: none;">
+    
+        <symbol id="mainIcon" viewBox="0 0 21 21">
+            <g>
+                <path d="M19.7426 10.59L10.7426 0.582003C10.3636 0.160003 9.63559 0.160003 9.25659 0.582003L0.256591 10.589C0.126638 10.7326 0.0411798 10.9108 0.0105955 11.1021C-0.0199888 11.2933 0.0056173 11.4893 0.0843036 11.6663C0.16299 11.8433 0.29137 11.9936 0.453851 12.099C0.616332 12.2044 0.805922 12.2603 0.999591 12.26H2.99959V19.265C2.99959 19.5303 3.10492 19.7848 3.29242 19.9725C3.47993 20.1602 3.73428 20.2657 3.99959 20.266H6.99959C7.26481 20.266 7.51916 20.1606 7.7067 19.9731C7.89423 19.7856 7.99959 19.5312 7.99959 19.266V15.26H11.9996V19.263C11.9995 19.3944 12.0252 19.5246 12.0754 19.646C12.1256 19.7674 12.1993 19.8778 12.2921 19.9708C12.385 20.0637 12.4953 20.1375 12.6167 20.1878C12.7381 20.2381 12.8682 20.264 12.9996 20.264H15.9996C16.2648 20.264 16.5192 20.1586 16.7067 19.9711C16.8942 19.7836 16.9996 19.5292 16.9996 19.264V12.258H18.9996C19.1935 12.259 19.3834 12.2035 19.5462 12.0983C19.7091 11.9932 19.8378 11.8428 19.9166 11.6657C19.9954 11.4886 20.0209 11.2923 19.99 11.101C19.9591 10.9096 19.8731 10.7313 19.7426 10.588V10.59Z"></path>
+            </g>
+        </symbol>
+    
+        <symbol id="arrowRight" viewBox="0 0 71 16">
+            <g>
+                <path d="M70.7071 8.70711C71.0976 8.31658 71.0976 7.68342 70.7071 7.29289L64.3431 0.928932C63.9526 0.538408 63.3195 0.538408 62.9289 0.928932C62.5384 1.31946 62.5384 1.95262 62.9289 2.34315L68.5858 8L62.9289 13.6569C62.5384 14.0474 62.5384 14.6805 62.9289 15.0711C63.3195 15.4616 63.9526 15.4616 64.3431 15.0711L70.7071 8.70711ZM0 9H70V7H0V9Z"/>
+            </g>
+        </symbol>
+    
+        <symbol id="smallArrowRight" viewBox="0 0 46 16">
+            <g>
+                <path d="M45.7071 8.7071C46.0976 8.31658 46.0976 7.68341 45.7071 7.29289L39.3431 0.928929C38.9526 0.538404 38.3195 0.538404 37.9289 0.928929C37.5384 1.31945 37.5384 1.95262 37.9289 2.34314L43.5858 8L37.9289 13.6569C37.5384 14.0474 37.5384 14.6805 37.9289 15.0711C38.3195 15.4616 38.9526 15.4616 39.3431 15.0711L45.7071 8.7071ZM8.74228e-08 9L45 9L45 7L-8.74228e-08 7L8.74228e-08 9Z"/>
+            </g>
+        </symbol>
+    
+        <symbol id="littleArrowLeft" viewBox="0 0 35 16">
+            <g>
+                <path d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928935C7.68054 0.53841 7.04738 0.53841 6.65685 0.928935L0.292892 7.2929ZM35 7L1 7L1 9L35 9L35 7Z"/>
+            </g>
+        </symbol>
+    
+        <symbol id="littleArrowRight" viewBox="0 0 35 16">
+            <g>
+                <path d="M34.7071 8.70711C35.0976 8.31658 35.0976 7.68342 34.7071 7.29289L28.3431 0.928932C27.9526 0.538408 27.3195 0.538408 26.9289 0.928932C26.5384 1.31946 26.5384 1.95262 26.9289 2.34315L32.5858 8L26.9289 13.6569C26.5384 14.0474 26.5384 14.6805 26.9289 15.0711C27.3195 15.4616 27.9526 15.4616 28.3431 15.0711L34.7071 8.70711ZM0 9H34V7H0V9Z"/>
+            </g>
+        </symbol>
+    
+        <symbol id="arrowDown" viewBox="0 0 16 35">
+            <g>
+                <path d="M7.29289 34.7071C7.68342 35.0976 8.31658 35.0976 8.70711 34.7071L15.0711 28.3431C15.4616 27.9526 15.4616 27.3195 15.0711 26.9289C14.6805 26.5384 14.0474 26.5384 13.6569 26.9289L8 32.5858L2.34314 26.9289C1.95262 26.5384 1.31946 26.5384 0.928931 26.9289C0.538407 27.3195 0.538407 27.9526 0.928931 28.3431L7.29289 34.7071ZM7 -4.37114e-08L7 34L9 34L9 4.37114e-08L7 -4.37114e-08Z"/>
+            </g>
+        </symbol>
+    
+        <symbol id="instIco" viewBox="0 0 45 45">
+            <g>
+                <path d="M13.9969 1.99875C16.1962 1.8975 16.8975 1.875 22.5 1.875C28.1025 1.875 28.8038 1.89937 31.0013 1.99875C33.1988 2.09812 34.6987 2.44875 36.0112 2.95688C37.3856 3.47625 38.6325 4.28812 39.6637 5.33812C40.7137 6.3675 41.5238 7.6125 42.0413 8.98875C42.5513 10.3013 42.9 11.8013 43.0013 13.995C43.1025 16.1981 43.125 16.8994 43.125 22.5C43.125 28.1025 43.1006 28.8037 43.0013 31.0031C42.9019 33.1969 42.5513 34.6969 42.0413 36.0094C41.5237 37.3858 40.7124 38.6329 39.6637 39.6637C38.6325 40.7137 37.3856 41.5238 36.0112 42.0413C34.6987 42.5513 33.1987 42.9 31.005 43.0013C28.8037 43.1025 28.1025 43.125 22.5 43.125C16.8975 43.125 16.1962 43.1006 13.9969 43.0013C11.8031 42.9019 10.3031 42.5513 8.99063 42.0413C7.61423 41.5237 6.36716 40.7124 5.33625 39.6637C4.28696 38.6338 3.47497 37.3873 2.95688 36.0112C2.44875 34.6987 2.1 33.1987 1.99875 31.005C1.8975 28.8019 1.875 28.1006 1.875 22.5C1.875 16.8975 1.89937 16.1962 1.99875 13.9987C2.09812 11.8013 2.44875 10.3013 2.95688 8.98875C3.47573 7.61265 4.28835 6.36621 5.33812 5.33625C6.36758 4.28719 7.61339 3.47521 8.98875 2.95688C10.3013 2.44875 11.8013 2.1 13.995 1.99875H13.9969ZM30.8344 5.71125C28.6594 5.61188 28.0069 5.59125 22.5 5.59125C16.9931 5.59125 16.3406 5.61188 14.1656 5.71125C12.1537 5.80312 11.0625 6.13875 10.335 6.42188C9.37313 6.79688 8.685 7.24125 7.96313 7.96313C7.27883 8.62885 6.75221 9.43928 6.42188 10.335C6.13875 11.0625 5.80312 12.1537 5.71125 14.1656C5.61188 16.3406 5.59125 16.9931 5.59125 22.5C5.59125 28.0069 5.61188 28.6594 5.71125 30.8344C5.80312 32.8462 6.13875 33.9375 6.42188 34.665C6.75187 35.5594 7.27875 36.3713 7.96313 37.0369C8.62875 37.7212 9.44063 38.2481 10.335 38.5781C11.0625 38.8613 12.1537 39.1969 14.1656 39.2887C16.3406 39.3881 16.9913 39.4087 22.5 39.4087C28.0087 39.4087 28.6594 39.3881 30.8344 39.2887C32.8462 39.1969 33.9375 38.8613 34.665 38.5781C35.6269 38.2031 36.315 37.7588 37.0369 37.0369C37.7212 36.3713 38.2481 35.5594 38.5781 34.665C38.8613 33.9375 39.1969 32.8462 39.2887 30.8344C39.3881 28.6594 39.4087 28.0069 39.4087 22.5C39.4087 16.9931 39.3881 16.3406 39.2887 14.1656C39.1969 12.1537 38.8613 11.0625 38.5781 10.335C38.2031 9.37313 37.7588 8.685 37.0369 7.96313C36.3711 7.27888 35.5607 6.75227 34.665 6.42188C33.9375 6.13875 32.8462 5.80312 30.8344 5.71125ZM19.8656 28.8581C21.3369 29.4706 22.9751 29.5532 24.5005 29.092C26.0259 28.6307 27.3439 27.6542 28.2293 26.3292C29.1147 25.0042 29.5126 23.4129 29.3551 21.8271C29.1976 20.2413 28.4944 18.7593 27.3656 17.6344C26.6461 16.9153 25.776 16.3646 24.8181 16.0222C23.8602 15.6797 22.8383 15.5538 21.8259 15.6537C20.8136 15.7535 19.8359 16.0766 18.9634 16.5996C18.0909 17.1227 17.3451 17.8326 16.7799 18.6785C16.2147 19.5243 15.8441 20.4849 15.6947 21.4912C15.5453 22.4974 15.6209 23.5243 15.916 24.4978C16.2111 25.4714 16.7184 26.3674 17.4014 27.1214C18.0843 27.8753 18.9259 28.4685 19.8656 28.8581ZM15.0037 15.0037C15.9882 14.0193 17.1568 13.2384 18.4431 12.7057C19.7293 12.1729 21.1078 11.8987 22.5 11.8987C23.8922 11.8987 25.2707 12.1729 26.5569 12.7057C27.8431 13.2384 29.0118 14.0193 29.9963 15.0037C30.9807 15.9882 31.7616 17.1568 32.2943 18.4431C32.8271 19.7293 33.1013 21.1078 33.1013 22.5C33.1013 23.8922 32.8271 25.2707 32.2943 26.5569C31.7616 27.8431 30.9807 29.0118 29.9963 29.9963C28.0081 31.9844 25.3116 33.1013 22.5 33.1013C19.6884 33.1013 16.9919 31.9844 15.0037 29.9963C13.0156 28.0081 11.8987 25.3116 11.8987 22.5C11.8987 19.6884 13.0156 16.9919 15.0037 15.0037ZM35.4525 13.4775C35.6964 13.2474 35.8917 12.9707 36.0268 12.6637C36.1619 12.3568 36.234 12.0258 36.2389 11.6905C36.2438 11.3552 36.1814 11.0223 36.0553 10.7115C35.9292 10.4008 35.7421 10.1185 35.5049 9.88132C35.2678 9.64419 34.9855 9.45705 34.6747 9.33097C34.364 9.2049 34.0311 9.14245 33.6958 9.14734C33.3604 9.15223 33.0295 9.22435 32.7225 9.35943C32.4156 9.49451 32.1389 9.6898 31.9087 9.93375C31.4612 10.4082 31.2162 11.0384 31.2257 11.6905C31.2352 12.3426 31.4985 12.9654 31.9597 13.4266C32.4209 13.8878 33.0436 14.1511 33.6958 14.1606C34.3479 14.1701 34.9781 13.925 35.4525 13.4775Z"/>
+            </g>
+        </symbol>
+    
+        <symbol id="facebookLogo" viewBox="0 0 22 45">
+            <g>
+                <path d="M5.61609 45V23.8847H0V16.2822H5.61609V9.78862C5.61609 4.68594 8.93354 0 16.5776 0C19.6726 0 21.9612 0.294975 21.9612 0.294975L21.7809 7.39445C21.7809 7.39445 19.4469 7.37186 16.8999 7.37186C14.1433 7.37186 13.7017 8.63478 13.7017 10.7309V16.2822H22L21.6389 23.8847H13.7017V45H5.61609Z" fill="black"/>
+            </g>
+        </symbol>
+    
+    
+    
+    
+    </svg>
+    <div class="page">
+        
+        <!-- Header -->
+
+        <header class="header">
+            <div class="header-content">
+        
+                <div>
+        
+                </div>
+        
+                <div class="header-content__burgerTransition">
+                    <div class="header-content__burger header-content__burger_hover">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <section class="header-menu">
+                <div class="header-menu__content">
+                    <div class="header-menu__helpCrossContainer">
+                        <div>
+                            cross
+                        </div>
+                    </div>
+        
+                    <div class="header-menu__tabsContainer">
+                        <div class="header-menu__logoContainer">
+                            <a href="#"><img src="../assets/images/header/headerLogo.svg" alt="#"></a>
+                        </div>
+        
+                        <div class="header-menu__tabsContent">
+        
+        
+                            <div class="header-menu__tabsFirstLvlContainer">
+                                <h2 class="header-menu__tabsFirstLvlTitle">ПОРТФОЛИО</h2>
+                                <div class="header-menu__tabsSecondLvlContainer">
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">Дизайн домов и коттеджей</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН квартир</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН Офисов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН ресторанов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН общественных пространств</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН магазинов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">РЕАЛИЗАЦИЯ ДИЗАЙН-ПРОЕКТА</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">Дизайн под ключ</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">ОРГАНИЗАЦИЯ ПРОСТРАНСТВА</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">АВТОРСКИЙ НАДЗОР</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+        
+        
+                            <div class="header-menu__tabsFirstLvlContainer">
+                                <h2 class="header-menu__tabsFirstLvlTitle">УСЛУГИ</h2>
+                                <div class="header-menu__tabsSecondLvlContainer">
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">Дизайн домов и коттеджей</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН квартир</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН Офисов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН ресторанов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН общественных пространств</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН магазинов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">РЕАЛИЗАЦИЯ ДИЗАЙН-ПРОЕКТА</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">Дизайн под ключ</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">ОРГАНИЗАЦИЯ ПРОСТРАНСТВА</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">АВТОРСКИЙ НАДЗОР</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+        
+        
+                            <div class="header-menu__tabsFirstLvlContainer">
+                                <h2 class="header-menu__tabsFirstLvlTitle">О КОМПАНИИ</h2>
+                                <div class="header-menu__tabsSecondLvlContainer">
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">Дизайн домов и коттеджей</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН квартир</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН Офисов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН ресторанов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН общественных пространств</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН магазинов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">РЕАЛИЗАЦИЯ ДИЗАЙН-ПРОЕКТА</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">Дизайн под ключ</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">ОРГАНИЗАЦИЯ ПРОСТРАНСТВА</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">АВТОРСКИЙ НАДЗОР</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+        
+        
+                            <div class="header-menu__tabsFirstLvlContainer">
+                                <h2 class="header-menu__tabsFirstLvlTitle">ЦЕНЫ</h2>
+                                <div class="header-menu__tabsSecondLvlContainer">
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">Дизайн домов и коттеджей</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН квартир</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН Офисов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН ресторанов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН общественных пространств</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН магазинов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">РЕАЛИЗАЦИЯ ДИЗАЙН-ПРОЕКТА</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">Дизайн под ключ</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">ОРГАНИЗАЦИЯ ПРОСТРАНСТВА</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">АВТОРСКИЙ НАДЗОР</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+        
+        
+                            <div class="header-menu__tabsFirstLvlContainer">
+                                <h2 class="header-menu__tabsFirstLvlTitle">БЛОГ</h2>
+                                <div class="header-menu__tabsSecondLvlContainer">
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">Дизайн домов и коттеджей</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН квартир</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН Офисов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН ресторанов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН общественных пространств</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН магазинов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">РЕАЛИЗАЦИЯ ДИЗАЙН-ПРОЕКТА</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">Дизайн под ключ</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">ОРГАНИЗАЦИЯ ПРОСТРАНСТВА</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">АВТОРСКИЙ НАДЗОР</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+        
+        
+                            <div class="header-menu__tabsFirstLvlContainer">
+                                <h2 class="header-menu__tabsFirstLvlTitle">КОНТАКТЫ</h2>
+                                <div class="header-menu__tabsSecondLvlContainer">
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">Дизайн домов и коттеджей</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН квартир</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН Офисов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН ресторанов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН общественных пространств</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">дИЗАЙН магазинов</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                    <div class="header-menu__block">
+                                        <div>
+                                            <button class="header-menu__accordionBtn">РЕАЛИЗАЦИЯ ДИЗАЙН-ПРОЕКТА</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">Дизайн под ключ</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">ОРГАНИЗАЦИЯ ПРОСТРАНСТВА</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+        
+        
+                                        <div>
+                                            <button class="header-menu__accordionBtn">АВТОРСКИЙ НАДЗОР</button>
+                                            <div class="header-menu__accordionContent">
+                                                <a href="#">Однокомнатные</a>
+                                                <a href="#">Двухкомнатные</a>
+                                                <a href="#">Трехкомнатные</a>
+                                                <a href="#">Студии</a>
+                                                <a href="#">Новостройки</a>
+                                                <a href="#">Сталинки</a>
+                                                <a href="#">Хрущевки</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="header-menu__tabsHelper">
+                            afsfasfasfasfasfasfsafasfsafasfs
+                        </div>
+                    </div>
+                </div>
+        
+        
+            </section>
+        
+        </header>
+        <!-- Main content -->
+        <main>
+
+            <div class="prices">
+                <div class="main-createEmotions__helper">
+                    <div class="leftBlockContainer">
+                        <div class="leftBlockContainer__imgContainer">
+                            <img src="./assets/images/main/leftContainerLogo.svg" alt="#">
+                        </div>
+            
+                        <div class="leftBlockContainer__textContainer">
+                            <div class="leftBlockContainer__text">
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <section class="prices-main prices-main__position">
+                    <h2 class="prices-main__title">
+                        ПРАЙС
+                    </h2>
+            
+                    <div class="prices-main__content">
+                        <div class="prices-main__container">
+                            <div class="prices-main__imgContainer">
+                                <img src="./assets/images/prices/pricesImg1.jpg" alt="#">
+                            </div>
+            
+                            <div class="prices-main__textContainer">
+                                <div class="prices-main__textTitle">
+                                    РАЗРАБОТКА ДИЗАЙН-ПРОЕКТА ДЛЯ ЖИЛЫХ И КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ
+                                </div>
+            
+                                <div class="prices-main__textSubtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                </div>
+            
+                                <a href="#">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+            
+                        <div class="prices-main__container">
+                            <div class="prices-main__imgContainer">
+                                <img src="./assets/images/prices/pricesImg2.jpg" alt="#">
+                            </div>
+            
+                            <div class="prices-main__textContainer">
+                                <div class="prices-main__textTitle">
+                                    ОРГАНИЗАЦИЯ И РЕОРГАНИЗАЦИЯ ПРОСТРАНСТВА
+                                </div>
+            
+                                <div class="prices-main__textSubtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                </div>
+            
+                                <a href="#">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+            
+                        <div class="prices-main__container prices-main__container_border">
+                            <div class="prices-main__imgContainer">
+                                <img src="./assets/images/prices/pricesImg3.jpg" alt="#">
+                            </div>
+            
+                            <div class="prices-main__textContainer prices-main__textContainer__position">
+                                <div class="prices-main__textTitle">
+                                    АВТОРСКИЙ НАДЗОР ЗА РЕАЛИЗАЦИЕЙ ПРОЕКТА
+                                </div>
+            
+                                <div class="prices-main__textSubtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                </div>
+            
+                                <a href="#">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+            
+                        <div class="main-separator__mobile">
+                            <div>ВОЙДИ В КОНТАКТ</div>
+                        </div>
+            
+                        <section class="main-contact prices-contact_position">
+                            <div class="main-contact__content prices-contact__content">
+                                <form action="#">
+                                    <h2>СКАЖИ ПРИВЕТ!</h2>
+                                    <input type="text" name="name" placeholder="Как к вам обращаться?">
+                                    <input type="email" name="email" placeholder="Ваш e-mail">
+                                    <textarea class="textArea" name="query" placeholder="Тема запроса" cols="30" rows="10"></textarea>
+                                    <div class="main-contact__licence">
+                                        Нажимая на кнопку, вы принимаете <a href="#">Положение и Согласие на обработку персональных
+                                            данных.</a>
+                                    </div>
+                                    <div class="main-contact__btnContainer">
+                                        <button type="submit">
+                                            ЖДУ ОТВЕТА
+                                        </button>
+                                    </div>
+                    
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            
+                
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-content__adress">
+                    Минск, площадь Свободы 23, пом. 64
+                </div>
+        
+                <div class="footer-content__contactsContainer">
+                    <div class="footer-content__phones">
+                        <a href="tel:+375(44)7026072">+ 375 (44) 702 60 72</a>
+                        <a href="tel:+375(44)7089079">+ 375 (44) 708 90 79</a>
+                    </div>
+        
+                    <a href="mailto:info@nordwex.com" class="footer-content__mail footer-content__mail_mobile">
+                        iotaarchitects@gmail.com
+                    </a>
+        
+                    <div class="footer-content__socialMediaContainer">
+                        <a href="https://www.instagram.com">
+                            <svg>
+                                <use href="#instIco"></use>
+                            </svg>
+                        </a>
+        
+                        <a href="https://ru-ru.facebook.com">
+                            <svg>
+                                <use href="#facebookLogo"></use>
+                            </svg>
+                        </a>
+        
+                        <a href="#">
+                            <img src="./assets/images/footer/beIco.svg" alt="#">
+                        </a>
+                    </div>
+        
+                    <a href="https://bydesign.by" class="footer-content__yar">
+                        Разработка и дизайн сайта - студия ЯР
+                    </a>
+                </div>
+        
+                <a href="mailto:info@nordwex.com" class="footer-content__mail footer-content__mail_desctop">
+                    iotaarchitects@gmail.com
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
