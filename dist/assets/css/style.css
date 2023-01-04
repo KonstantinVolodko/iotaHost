@@ -1585,7 +1585,7 @@ main {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 13%;
+    width: 12%;
 }
 
 @media (max-width: 850px) {
@@ -2725,7 +2725,7 @@ main {
 }
 
 .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__imgContainer {
-    width: 60.8%;
+    width: 62%;
 }
 
 @media (max-width: 920px) {
@@ -3503,10 +3503,9 @@ main {
     font-weight: 500;
     font-size: 2rem;
     line-height: 100.1%;
-    -webkit-text-decoration-line: underline;
-    text-decoration-line: underline;
     text-transform: uppercase;
     color: #000000;
+    border-bottom: 1px solid #000000;
 }
 
 .footer-content .footer-content__contactsContainer {
@@ -3549,17 +3548,17 @@ main {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .footer-content .footer-content__contactsContainer .footer-content__phones a {
     font-style: normal;
     font-weight: 500;
     font-size: 2rem;
-    line-height: 136.6%;
-    -webkit-text-decoration-line: underline;
-    text-decoration-line: underline;
+    line-height: 100%;
     text-transform: uppercase;
     color: #000000;
+    border-bottom: 1px solid #000000;
 }
 
 @media (max-width: 500px) {
@@ -3603,10 +3602,9 @@ main {
     font-style: normal;
     font-weight: 400;
     font-size: 1.4rem;
-    line-height: 136.6%;
-    -webkit-text-decoration-line: underline;
-    text-decoration-line: underline;
+    line-height: 100.6%;
     color: #000000;
+    border-bottom: 1px solid #000000;
 }
 
 .footer-content__mail_mobile {
@@ -3811,11 +3809,19 @@ main {
     display: flex;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    padding-right: 8rem;
+}
+
+@media (max-width: 1024px) {
+    .portfolio-content .portfolio-content__contentBlock:nth-child(even) {
+        padding-right: 0rem;
+    }
 }
 
 .portfolio-content .portfolio-content__contentBlock:nth-child(even) .portfolio-content__textContainer {
     -ms-flex-align: start;
     align-items: flex-start;
+    width: 72%;
 }
 
 @media (max-width: 500px) {
@@ -3884,6 +3890,7 @@ main {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 9rem;
+    margin-top: 7.6rem !important;
 }
 
 @media (max-width: 500px) {
