@@ -1382,6 +1382,12 @@ main {
     padding-bottom: 20rem;
 }
 
+@media (max-width: 500px) {
+    .main {
+        padding-bottom: 13rem;
+    }
+}
+
 .main-createEmotions .main-createEmotions__helper {
     width: 15%;
 }
@@ -1478,7 +1484,7 @@ main {
 
 @media (max-width: 500px) {
     .main-createEmotions .main-createEmotions__content .main-createEmotions__imgContainer {
-        width: 50%;
+        width: 59%;
     }
 }
 
@@ -1564,6 +1570,12 @@ main {
     }
 }
 
+@media (max-width: 850px) {
+    .main-createEmotions .main-createEmotions__content .main-createEmotions__textContainer .main-createEmotions__subtitle {
+        width: 46.2%;
+    }
+}
+
 @media (max-width: 500px) {
     .main-createEmotions .main-createEmotions__content .main-createEmotions__textContainer .main-createEmotions__subtitle {
         font-size: 2.1rem;
@@ -1633,7 +1645,7 @@ main {
 
 @media (max-width: 500px) {
     .leftBlockContainer .leftBlockContainer__imgContainer {
-        padding-top: 1rem;
+        padding-top: 2rem;
         padding-left: 1.5rem;
         width: 85%;
     }
@@ -1760,6 +1772,7 @@ main {
 @media (max-width: 500px) {
     .main-solutions .main-solutions__content {
         row-gap: 3rem;
+        width: 78%;
     }
 }
 
@@ -1896,6 +1909,13 @@ main {
     }
 }
 
+@media (max-width: 500px) {
+    .main-solutions .main-solutions__content .main-solutions__imgContainer .main-solutions__watchPortfolioContainer {
+        padding-left: 8rem;
+        padding-right: 0rem;
+    }
+}
+
 .main-solutions .main-solutions__content .main-solutions__imgContainer span {
     font-style: normal;
     font-weight: 600;
@@ -1965,6 +1985,13 @@ main {
 @media (max-width: 920px) {
     .main-services .main-services__content {
         width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-services .main-services__content {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 }
 
@@ -2544,6 +2571,12 @@ main {
     }
 }
 
+@media (max-width: 500px) {
+    .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock {
+        padding-left: 1.5rem;
+    }
+}
+
 .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock .main-firstStep__text {
     font-style: normal;
     font-weight: 500;
@@ -2575,6 +2608,7 @@ main {
 @media (max-width: 500px) {
     .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock .main-firstStep__text {
         font-size: 2.1rem;
+        padding-left: 0rem;
     }
 }
 
@@ -2623,6 +2657,7 @@ main {
         line-height: 133.1%;
         -ms-flex-align: center;
         align-items: center;
+        padding-left: 0rem;
     }
 }
 
@@ -2670,6 +2705,7 @@ main {
     .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock .main-firstStep__accordeonContainer .main-firstStep__accordeonContent {
         font-size: 1.9rem;
         padding-top: 2rem;
+        padding-left: 0rem;
     }
 }
 
@@ -2715,6 +2751,7 @@ main {
         width: 73%;
         margin-top: 4rem;
         margin-bottom: 4rem;
+        padding-left: 0rem;
     }
 }
 
@@ -2864,6 +2901,7 @@ main {
 @media (max-width: 500px) {
     .main-gallery .main-gallery__tabBlockContainer .main-gallery__tabsContainer {
         padding-left: unset;
+        padding-bottom: 1rem;
     }
 }
 
@@ -3021,7 +3059,7 @@ main {
 
 @media (max-width: 500px) {
     .main-contact .main-contact__content form h2 {
-        font-size: 4.3rem;
+        font-size: 4rem;
         line-height: 4.4rem;
     }
 }
@@ -3194,7 +3232,7 @@ main {
 
 @media (max-width: 500px) {
     .main-separator__mobile {
-        margin-top: 10rem;
+        margin-top: 13.8rem;
         font-size: 2.1rem;
     }
 }
@@ -3233,7 +3271,7 @@ main {
 
 @media (max-width: 920px) {
     .header-content {
-        padding-top: 1.5rem;
+        padding-top: 2.5rem;
     }
 }
 
@@ -3344,6 +3382,14 @@ main {
 @media (max-width: 850px) {
     .header-menu__content {
         padding-top: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-menu__content {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 2.5rem;
     }
 }
 
@@ -3966,6 +4012,7 @@ main {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         margin-top: unset;
+        width: 100%;
     }
 }
 
@@ -4052,6 +4099,7 @@ main {
     .portfolio-content .portfolio-content__contentBlock:nth-child(even) .portfolio-content__textContainer {
         padding-right: 1.5rem;
         padding-left: unset !important;
+        width: 100%;
     }
 }
 
@@ -4193,7 +4241,7 @@ main {
 
 @media (max-width: 500px) {
     .secondPage {
-        padding-bottom: 10rem;
+        padding-bottom: 13rem;
     }
 }
 
@@ -4296,7 +4344,7 @@ main {
 @media (max-width: 500px) {
     .secondPage-idea .secondPage-idea__aboutClientsBlock {
         padding-left: 8.9rem;
-        padding-right: 1.5rem;
+        padding-right: 3.5rem;
     }
 }
 
@@ -5182,7 +5230,7 @@ main {
 
 @media (max-width: 500px) {
     .services {
-        padding-bottom: 10rem;
+        padding-bottom: 13rem;
     }
 }
 
@@ -6854,7 +6902,7 @@ main {
 @media (max-width: 500px) {
     .autor-header h2 {
         margin-top: 3rem;
-        font-size: 4.2rem;
+        font-size: 4.3rem;
     }
 }
 
@@ -7480,6 +7528,8 @@ main {
 @media (max-width: 500px) {
     .realization__params {
         margin-top: 3rem !important;
+        -ms-flex-direction: column-reverse !important;
+        flex-direction: column-reverse !important;
     }
 }
 
@@ -7514,7 +7564,7 @@ main {
 
 @media (max-width: 500px) {
     .prices {
-        padding-bottom: 10rem;
+        padding-bottom: 13rem;
     }
 }
 
@@ -8145,6 +8195,12 @@ main {
     margin-top: 7rem;
 }
 
+@media (max-width: 500px) {
+    .article-content .article-content__block {
+        margin-top: 2rem;
+    }
+}
+
 .article-content .article-content__block .article-content__imgContainer {
     width: 100%;
 }
@@ -8182,6 +8238,12 @@ main {
 
 .article-content .article-content__textContainer_secondElem {
     margin-top: 6.1rem !important;
+}
+
+@media (max-width: 500px) {
+    .article-content .article-content__textContainer_secondElem {
+        margin-top: 2rem !important;
+    }
 }
 
 .aboutCompany-content_position {
