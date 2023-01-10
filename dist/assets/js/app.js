@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  let scrollWidth = (window.innerWidth - document.body.clientWidth + 'px')
+
+  
+
+
+
   let desctopHelper = document.querySelector('.main-services__desctopHelper')
   let acc = document.querySelectorAll(".main-services__btn");
 
@@ -38,13 +44,13 @@ document.addEventListener("DOMContentLoaded", () => {
     loopedSlides: 4
   });
   let galleryThumbs = new Swiper('.gallery-thumbs', {
-    // spaceBetween: 'auto',
+    // spaceBetween: 60,
     // centeredSlides: true,
     slidesPerView: 4,
     touchRatio: 0.2,
     slideToClickedSlide: true,
     loop: true,
-    loopedSlides: 4
+    loopedSlides: 4,
   });
   galleryTop.controller.control = galleryThumbs;
   galleryThumbs.controller.control = galleryTop;
@@ -71,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const swiperFunction = function () {
     let swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
+      spaceBetween: 80,
       loop: true,
       navigation: {
         nextEl: '.main-gallery__buttonPrev',
@@ -78,8 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       breakpoints: {
         850: {
-          slidesPerView: 1.4,
-          spaceBetween: 30,
+          slidesPerView: 1.45,
+          spaceBetween: -25,
         },
       }
     });
@@ -112,6 +119,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let burgerTransition = document.querySelector('.header-content__burgerTransition')
   let menuContent = document.querySelector('.header-menu__content')
   let page = document.getElementsByTagName('body')
+
+  document.body.style.setProperty("--scrollWidth", scrollWidth)
 
   burger.forEach(e => {
     e.addEventListener('click', () => {
