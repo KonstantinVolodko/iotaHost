@@ -1064,15 +1064,21 @@
             
                 <div class="main-createEmotions__helper">
                     <div class="leftBlockContainer">
+                        <div class="leftBlockContainer__horizontalBorder"></div>
                         <div class="leftBlockContainer__imgContainer">
                             <img src="./assets/images/main/leftContainerLogo.svg" alt="#">
                         </div>
             
-                        <div class="leftBlockContainer__textContainer">
-                            <div class="leftBlockContainer__text">
-            
+                        <div class="leftBlockContainer__positionHelper">
+                            <div class="leftBlockContainer__textContainer">
+                                <div class="leftBlockContainer__text">
+                                    
+                                </div>
+                                
                             </div>
+                            <div class="leftBlock__verticalBorder"></div>
                         </div>
+                        
                     </div>
                 </div>
             
@@ -1097,7 +1103,7 @@
                     </div>
                 </section>
             
-                <div class="main-separator__mobile">
+                <div id="create" class="main-separator__mobile">
                     <div>МЫ РАЗРАБАТЫВАЕМ:</div>
                 </div>
             
@@ -1120,12 +1126,13 @@
                                 </svg>
                                 <span>ПОСМОТРЕТЬ ПОРТФОЛИО</span>
                             </a>
+                            <div class="main-solutions__linkUnderline"></div>
                             <img src="./assets/images/main/solutionBg.jpg" alt="#">
                         </div>
                     </div>
                 </section>
             
-                <div class="main-separator__mobile main-separator__mobile_services">
+                <div id="services" class="main-separator__mobile main-separator__mobile_services">
                     <div>УСЛУГИ</div>
                 </div>
             
@@ -1166,6 +1173,8 @@
                             </div>
                         </div>
             
+                        <div class="main-services__borderLine"></div>
+            
                         <div class="main-services__tabContainer">
                             <button class="main-services__btn">Разработка дизайн-проектов коммерческой недвижимости</button>
                             <div class="main-services__tabContent">
@@ -1195,6 +1204,8 @@
                                 </a>
                             </div>
                         </div>
+            
+                        <div class="main-services__borderLine"></div>
             
                         <div class="main-services__tabContainer">
                             <button class="main-services__btn">Организация и реорганизация пространства под задачи бизнеса</button>
@@ -1226,6 +1237,8 @@
                             </div>
                         </div>
             
+                        <div class="main-services__borderLine"></div>
+            
                         <div class="main-services__tabContainer">
                             <button class="main-services__btn">Авторский надзор</button>
                             <div class="main-services__tabContent">
@@ -1255,6 +1268,8 @@
                                 </a>
                             </div>
                         </div>
+            
+                        <div class="main-services__borderLine"></div>
                     </div>
             
                 </div>
@@ -1355,7 +1370,7 @@
                     </div>
                 </section>
             
-                <div class="main-separator__mobile">
+                <div id="firstStep" class="main-separator__mobile">
                     <div>НАШ ХОД ПЕРВЫЙ</div>
                 </div>
             
@@ -1417,7 +1432,7 @@
                 </section>
             
             
-                <div class="main-separator__mobile">
+                <div id="gallery" class="main-separator__mobile">
                     <div>БЫСТРАЯ ГАЛЕРЕЯ</div>
                 </div>
             
@@ -1440,93 +1455,99 @@
             
                             <div class="main-gallery__tabsContainer">
             
-                                <div class="main-gallery__tab">
-                                    <div class="main-gallery__tabHeader">
-                                        ВСЕ
+                                <div class="main-gallery__tabsHelperForBorder">
+                                    <div class="main-gallery__tab">
+                                        <div class="main-gallery__tabHeader">
+                                            ВСЕ
+                                        </div>
+                
+                                        <div class="main-gallery__tabContent">
+                                            <div class="swiper mySwiper">
+                                                <div class="swiper-wrapper">
+                                                    <a href="#" class="swiper-slide">
+                                                        <div class="main-gallery__slideTitle">
+                                                            ВАННАЯ КОМНАТА1
+                                                        </div>
+                                                        <div class="main-gallery__slideImgContainer">
+                                                            <img src="./assets/images/main/sliderImg1.jpg" alt="#">
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="swiper-slide">
+                                                        <div class="main-gallery__slideTitle">
+                                                            КОММЕРЧЕСКИЙ ИНТЕРЬЕР1
+                                                        </div>
+                                                        <div class="main-gallery__slideImgContainer">
+                                                            <img src="./assets/images/main/sliderImg1.jpg" alt="#">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-            
-                                    <div class="main-gallery__tabContent">
-                                        <div class="swiper mySwiper">
-                                            <div class="swiper-wrapper">
-                                                <a href="#" class="swiper-slide">
-                                                    <div class="main-gallery__slideTitle">
-                                                        ВАННАЯ КОМНАТА1
-                                                    </div>
-                                                    <div class="main-gallery__slideImgContainer">
-                                                        <img src="./assets/images/main/sliderImg1.jpg" alt="#">
-                                                    </div>
-                                                </a>
-                                                <a href="#" class="swiper-slide">
-                                                    <div class="main-gallery__slideTitle">
-                                                        КОММЕРЧЕСКИЙ ИНТЕРЬЕР1
-                                                    </div>
-                                                    <div class="main-gallery__slideImgContainer">
-                                                        <img src="./assets/images/main/sliderImg1.jpg" alt="#">
-                                                    </div>
-                                                </a>
+                
+                                    <div class="main-gallery__tab">
+                                        <div class="main-gallery__tabHeader">
+                                            КОММЕРЧЕСКИЕ
+                                        </div>
+                
+                                        <div class="main-gallery__tabContent">
+                                            <div class="swiper mySwiper">
+                                                <div class="swiper-wrapper">
+                                                    <a href="#" class="swiper-slide">
+                                                        <div class="main-gallery__slideTitle">
+                                                            ВАННАЯ КОМНАТА2
+                                                        </div>
+                                                        <div class="main-gallery__slideImgContainer">
+                                                            <img src="./assets/images/main/sliderImg1.jpg" alt="#">
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="swiper-slide">
+                                                        <div class="main-gallery__slideTitle">
+                                                            КОММЕРЧЕСКИЙ ИНТЕРЬЕР2
+                                                        </div>
+                                                        <div class="main-gallery__slideImgContainer">
+                                                            <img src="./assets/images/main/sliderImg1.jpg" alt="#">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="main-gallery__tab">
+                                        <div class="main-gallery__tabHeader main-gallery__tabHeader_helper">
+                                            ЖИЛЫЕ
+                                        </div>
+                
+                                        <div class="main-gallery__tabContent">
+                                            <div class="swiper mySwiper">
+                                                <div class="swiper-wrapper">
+                                                    <a href="#" class="swiper-slide">
+                                                        <div class="main-gallery__slideTitle">
+                                                            ВАННАЯ КОМНАТА3
+                                                        </div>
+                                                        <div class="main-gallery__slideImgContainer">
+                                                            <img src="./assets/images/main/sliderImg1.jpg" alt="#">
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="swiper-slide">
+                                                        <div class="main-gallery__slideTitle">
+                                                            КОММЕРЧЕСКИЙ ИНТЕРЬЕР3
+                                                        </div>
+                                                        <div class="main-gallery__slideImgContainer">
+                                                            <img src="./assets/images/main/sliderImg1.jpg" alt="#">
+                                                        </div>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
             
-                                <div class="main-gallery__tab">
-                                    <div class="main-gallery__tabHeader">
-                                        КОММЕРЧЕСКИЕ
-                                    </div>
-            
-                                    <div class="main-gallery__tabContent">
-                                        <div class="swiper mySwiper">
-                                            <div class="swiper-wrapper">
-                                                <a href="#" class="swiper-slide">
-                                                    <div class="main-gallery__slideTitle">
-                                                        ВАННАЯ КОМНАТА2
-                                                    </div>
-                                                    <div class="main-gallery__slideImgContainer">
-                                                        <img src="./assets/images/main/sliderImg1.jpg" alt="#">
-                                                    </div>
-                                                </a>
-                                                <a href="#" class="swiper-slide">
-                                                    <div class="main-gallery__slideTitle">
-                                                        КОММЕРЧЕСКИЙ ИНТЕРЬЕР2
-                                                    </div>
-                                                    <div class="main-gallery__slideImgContainer">
-                                                        <img src="./assets/images/main/sliderImg1.jpg" alt="#">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                <div class="main-gallery__tab">
-                                    <div class="main-gallery__tabHeader main-gallery__tabHeader_helper">
-                                        ЖИЛЫЕ
-                                    </div>
-            
-                                    <div class="main-gallery__tabContent">
-                                        <div class="swiper mySwiper">
-                                            <div class="swiper-wrapper">
-                                                <a href="#" class="swiper-slide">
-                                                    <div class="main-gallery__slideTitle">
-                                                        ВАННАЯ КОМНАТА3
-                                                    </div>
-                                                    <div class="main-gallery__slideImgContainer">
-                                                        <img src="./assets/images/main/sliderImg1.jpg" alt="#">
-                                                    </div>
-                                                </a>
-                                                <a href="#" class="swiper-slide">
-                                                    <div class="main-gallery__slideTitle">
-                                                        КОММЕРЧЕСКИЙ ИНТЕРЬЕР3
-                                                    </div>
-                                                    <div class="main-gallery__slideImgContainer">
-                                                        <img src="./assets/images/main/sliderImg1.jpg" alt="#">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="main-gallery__tabsContainer_borderLine"></div>
                             </div>
+            
+                            
                         </div>
             
                         <div class="main-gallery__helper"></div>
@@ -1534,7 +1555,7 @@
                     </div>
                 </div>
             
-                <div class="main-separator__mobile">
+                <div id="inContact" class="main-separator__mobile">
                     <div>ВОЙДИ В КОНТАКТ</div>
                 </div>
             
@@ -1609,6 +1630,9 @@
     </div>
 
     <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="assets/js/vendor.js"></script>
     <script src="assets/js/app.js"></script>
 </body>

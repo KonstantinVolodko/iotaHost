@@ -8819,7 +8819,14 @@ textarea {
 }
 
 .contacts-content__adressBlock .contacts-content__contactsContainer .contacts-content__helpBlock div a {
-    text-decoration: underline;
+    border-bottom: 1px solid #000000;
+    width: 85%;
+}
+
+@media (max-width: 1600px) {
+    .contacts-content__adressBlock .contacts-content__contactsContainer .contacts-content__helpBlock div a {
+        width: 30%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -8828,8 +8835,16 @@ textarea {
     }
 }
 
+.contacts-content__adressBlock .contacts-content__contactsContainer .contacts-content__helpBlock:last-child {
+    gap: 2.7rem;
+}
+
+.contacts-content__adressBlock .contacts-content__contactsContainer .contacts-content__helpBlock:last-child a {
+    width: 66%;
+}
+
 .contacts-content__map_position {
-    margin-top: 14rem;
+    margin-top: 10rem;
 }
 
 .contacts-content__map {
