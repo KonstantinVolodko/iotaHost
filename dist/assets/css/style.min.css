@@ -2036,6 +2036,9 @@ main {
     padding-bottom: 2rem;
   }
 }
+.main-services .main-services__content .main-services__tabContainer .main-services__btn:hover {
+  padding-left: 0.7rem;
+}
 .main-services .main-services__content .main-services__tabContainer .main-services__tabContent {
   display: none;
   padding: 0 1.8rem;
@@ -3199,7 +3202,7 @@ textarea {
 }
 
 .deleteHover:hover {
-  font-weight: 300 !important;
+  padding-left: 0rem;
 }
 
 .header {
