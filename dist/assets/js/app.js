@@ -784,7 +784,6 @@ document.addEventListener("DOMContentLoaded", () => {
     trigger: '.main-services__tabContainer',
     start: 'top 60%',
     end: "top 30%",
-    markers: true,
   })
 
   const tl17 = gsap.timeline();
@@ -796,7 +795,6 @@ document.addEventListener("DOMContentLoaded", () => {
     trigger: '.main-services__tabContainer',
     start: 'top 60%',
     end: "top 30%",
-    markers: true,
   })
   const tl11 = gsap.timeline();
 
