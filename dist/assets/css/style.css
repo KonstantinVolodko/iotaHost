@@ -2111,6 +2111,7 @@ main {
 }
 
 .main-services .main-services__content .main-services__tabContainer .main-services__btn {
+    font-family: "Manrope";
     cursor: pointer;
     width: 100%;
     text-align: left;
@@ -2142,10 +2143,6 @@ main {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-}
-
-.main-services .main-services__content .main-services__tabContainer .main-services__btn:hover {
-    font-weight: 700;
 }
 
 .main-services .main-services__content .main-services__tabContainer .main-services__tabContent {
@@ -2262,7 +2259,7 @@ main {
 }
 
 .main-services .main-services__desctopHelper a:hover {
-    font-weight: 700;
+    text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333;
     transition: all linear 0.3s;
 }
 
@@ -3190,7 +3187,7 @@ main {
 }
 
 .activeTab {
-    font-weight: 700 !important;
+    text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333;
     transition: all 0.2s linear;
 }
 
