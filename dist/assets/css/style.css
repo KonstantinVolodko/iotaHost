@@ -2145,6 +2145,10 @@ main {
     }
 }
 
+.main-services .main-services__content .main-services__tabContainer .main-services__btn:hover {
+    padding-left: 0.7rem;
+}
+
 .main-services .main-services__content .main-services__tabContainer .main-services__tabContent {
     display: none;
     padding: 0 1.8rem;
@@ -2259,7 +2263,7 @@ main {
 }
 
 .main-services .main-services__desctopHelper a:hover {
-    text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333;
+    padding-left: 0.7rem;
     transition: all linear 0.3s;
 }
 
@@ -3478,7 +3482,7 @@ textarea {
 }
 
 .deleteHover:hover {
-    font-weight: 300 !important;
+    padding-left: 0rem !important;
 }
 
 .header {

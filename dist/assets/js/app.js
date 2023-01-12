@@ -44,11 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
       this.classList.add("activeTab");
       const tl16 = gsap.timeline();
 
-      tl16.from('.main-services__desctopHelper', { opacity: 0, x: -100, duration: 0.5 })
+      tl16.from('.main-services__desctopHelper', { opacity: 0, duration: 1.5 })
 
       acc.forEach(element => {
         element.classList.remove('deleteHover')
-        if (element.classList.contains('activeTab') !== true) {
+        if (element.classList.contains('activeTab')) {
           element.classList.add('deleteHover')
         }
       })

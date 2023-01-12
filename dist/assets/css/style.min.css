@@ -1667,7 +1667,7 @@ main {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 2.4rem;
   line-height: 100.1%;
   color: #000000;
@@ -2036,6 +2036,9 @@ main {
     padding-bottom: 2rem;
   }
 }
+.main-services .main-services__content .main-services__tabContainer .main-services__btn a {
+  color: #000000;
+}
 .main-services .main-services__content .main-services__tabContainer .main-services__btn:hover {
   padding-left: 0.7rem;
 }
@@ -2134,16 +2137,18 @@ main {
   transition: all linear 0.3s;
 }
 .main-services .main-services__desctopHelper a svg {
-  display: none;
+  opacity: 0;
   width: 4.5rem;
   height: 1.8rem;
+  transition: all linear 0.3s;
 }
 .main-services .main-services__desctopHelper a:hover {
   padding-left: 0.7rem;
   transition: all linear 0.3s;
 }
 .main-services .main-services__desctopHelper a:hover svg {
-  display: block;
+  opacity: 1;
+  transition: all linear 0.3s;
 }
 @media (max-width: 920px) {
   .main-services .main-services__desctopHelper {
@@ -3202,7 +3207,7 @@ textarea {
 }
 
 .deleteHover:hover {
-  padding-left: 0rem;
+  padding-left: 0rem !important;
 }
 
 .header {
