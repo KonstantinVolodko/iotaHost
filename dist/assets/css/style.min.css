@@ -2149,6 +2149,10 @@ main {
 .main-services .main-services__desctopHelper a:hover svg {
   opacity: 1;
   transition: all linear 0.3s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scale(1.15, 1);
+          transform: scale(1.15, 1);
 }
 @media (max-width: 920px) {
   .main-services .main-services__desctopHelper {
@@ -2626,6 +2630,14 @@ main {
 .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock .main-firstStep__accordeonContainer .main-firstStep__accrordeonBtn svg {
   width: 2rem;
   height: 3.4rem;
+  transition: all 0.2s linear;
+}
+.main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock .main-firstStep__accordeonContainer .main-firstStep__accrordeonBtn:hover svg {
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(1, 1.15);
+          transform: scale(1, 1.15);
+  transition: all 0.2s linear;
 }
 .main-firstStep .main-firstStep__content .main-firstStep__contentBlock .main-firstStep__textBlock .main-firstStep__accordeonContainer .main-firstStep__accordeonContent {
   font-style: normal;
