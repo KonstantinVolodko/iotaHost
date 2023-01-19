@@ -18,7 +18,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=M+PLUS+1p:wght@300;400;500;700;800;900&family=Saira+Condensed:wght@300;400;500;600;700;800&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     
-    
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link
       rel="stylesheet"
@@ -30,6 +29,12 @@
 </head>
 
 <body>
+    <!-- <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div> -->
     <svg style="display: none;">
     
         <symbol id="mainIcon" viewBox="0 0 21 21">
@@ -1085,30 +1090,33 @@
         <!-- Main content -->
         <main>
 
-            <div class="main">
+            <div class="main-createEmotions__helper2">
+                <div class="leftBlockContainer">
+                    <div class="leftBlockContainer__horizontalBorder"></div>
+                    <div class="leftBlockContainer__imgContainer">
+                        <!-- <img src="./assets/images/main/leftContainerLogo.svg" alt="#"> -->
+                        <svg>
+                            <use href="#logo"></use>
+                        </svg>
+                    </div>
             
-                <div class="main-createEmotions__helper">
-                    <div class="leftBlockContainer">
-                        <div class="leftBlockContainer__horizontalBorder"></div>
-                        <div class="leftBlockContainer__imgContainer">
-                            <!-- <img src="./assets/images/main/leftContainerLogo.svg" alt="#"> -->
-                            <svg>
-                                <use href="#logo"></use>
-                            </svg>
-                        </div>
-            
-                        <div class="leftBlockContainer__positionHelper">
-                            <div class="leftBlockContainer__textContainer">
-                                <div class="leftBlockContainer__text">
-                                    
-                                </div>
+                    <div class="leftBlockContainer__positionHelper">
+                        <div class="leftBlockContainer__textContainer">
+                            <div class="leftBlockContainer__text">
                                 
                             </div>
-                            <div class="leftBlock__verticalBorder"></div>
+                            
                         </div>
-                        
+                        <div class="leftBlock__verticalBorder"></div>
                     </div>
+                    
                 </div>
+            </div>
+            
+            
+            <div class="main">
+            
+                
             
                 <section class="main-createEmotions main-createEmotions_position">
                     <div class="main-createEmotions__content">
@@ -1140,23 +1148,27 @@
                     <div class="main-solutions__content">
                         <h2>Решения, которые работают</h2>
                         <div class="main-solutions__subtitle">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua.
-                        </div>
-                        <div class="main-solutions__imgContainer">
-                            <a href="#" class="main-solutions__watchPortfolioContainer">
-                                <svg class="main-solutions__arrowRightDesctop">
-                                    <use href="#arrowRight"></use>
-                                </svg>
+                            <div class="main-solutions__subtitleText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua.
+                            </div>
             
-                                <svg class="main-solutions__arrowRightMobile">
-                                    <use href="#arrowRightMobile"></use>
-                                </svg>
-                                <span>ПОСМОТРЕТЬ ПОРТФОЛИО</span>
-                            </a>
-                            <div class="main-solutions__linkUnderline"></div>
-                            <img src="./assets/images/main/solutionBg.jpg" alt="#">
+                            
                         </div>
+                        <a href="#" class="swiper main-solutions__imgContainer">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="./assets/images/main/solutionBg.jpg" alt="#"></div>
+                              <div class="swiper-slide"><img src="./assets/images/main/2.jpg" alt="#"></div>
+                            </div>
+                        </a>
+            
+                        <a href="#" class="main-solutions__design">
+                            <div class="main-solutions__designSubtitle">Смотреть работы</div>
+                            <div class="main-solutions__designArrow">
+                                <svg>
+                                    <use href="#littleArrowRight"></use>
+                                </svg>
+                            </div>
+                        </a>
                     </div>
                 </section>
             
@@ -1236,38 +1248,15 @@
                         <div class="main-services__borderLine"></div>
             
                         <div class="main-services__tabContainer">
-                            <button class="main-services__btn">Организация и реорганизация пространства под задачи бизнеса</button>
+                            <button class="main-services__btn"><a href="#">Организация и реорганизация пространства под задачи бизнеса</a></button>
                             <div class="main-services__tabContent">
-                                <a href="#">
-                                    <span>Дизайн квартир3</span>
-                                    <svg>
-                                        <use href="#smallArrowRight"></use>
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <span>Дизайн домов и коттеджей3</span>
-                                    <svg>
-                                        <use href="#smallArrowRight"></use>
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <span>Реализация дизайн-проектов3</span>
-                                    <svg>
-                                        <use href="#smallArrowRight"></use>
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <span>Дизайн под ключ3</span>
-                                    <svg>
-                                        <use href="#smallArrowRight"></use>
-                                    </svg>
-                                </a>
+                                
                             </div>
                         </div>
             
                         <div class="main-services__borderLine"></div>
             
-                        <div class="main-services__tabContainer">
+                        <div class="main-services__tabContainer scrollHelperTest">
                             <button class="main-services__btn"><a href="#">Авторский надзор</a></button>
                             <div class="main-services__tabContent">
                                 
@@ -1283,7 +1272,9 @@
             
                 <section class="main-result main-result_position">
                     <div class="main-result__content">
-                        <h2>Заряжены на результат</h2>
+                        <div class="main-result__h2Container">
+                            <h2>Заряжены на результат</h2>
+                        </div>
             
                         <div class="main-result__stepsSwiper">
             
@@ -1548,15 +1539,11 @@
                                         </div>
                                     </div>
                                 </div>
-            
                                 <div class="main-gallery__tabsContainer_borderLine"></div>
                             </div>
-            
-                            
                         </div>
             
                         <div class="main-gallery__helper"></div>
-            
                     </div>
                 </div>
             
@@ -1635,11 +1622,22 @@
     </div>
 
     <!-- JS -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="assets/js/vendor.js"></script>
     <script src="assets/js/app.js"></script>
+    <script>
+        // window.onload = function () {
+        //   document.body.classList.add('loaded_hiding');
+        //   window.setTimeout(function () {
+        //     document.body.classList.add('loaded');
+        //     document.body.classList.remove('loaded_hiding');
+        //   }, 500);
+        // }
+    </script>
+
 </body>
 
 </html>
